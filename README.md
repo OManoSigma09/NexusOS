@@ -6,7 +6,7 @@
     <!-- CasaOS Banner -->
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="images/nexusosbanner.png">
-        <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/IceWhaleTech/logo/main/casaos/casaos_banner_twilight_blue_800x300.png">
+        <source media="(prefers-color-scheme: light)" srcset="images/nexusosscreenshot.png">
         <img alt="NexusOS" src="https://raw.githubusercontent.com/IceWhaleTech/logo/main/casaos/casaos_banner_twilight_blue_800x300.png">
     </picture>
     <br/>
