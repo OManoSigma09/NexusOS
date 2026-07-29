@@ -6,8 +6,8 @@
     <!-- CasaOS Banner -->
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="images/nexusosbanner.png">
-        <source media="(prefers-color-scheme: light)" srcset="images/nexusosscreenshot.png">
-        <img alt="NexusOS" src="images/nexusosscreenshot.png">
+        <source media="(prefers-color-scheme: light)" srcset="images/nexusosbanner.png">
+        <img alt="NexusOS" src="images/nexusosbanner.png">
     </picture>
     <br/>
     <i>Connect with the community, establish autonomy, reduce the cost of SaaS, and MAXIMIZE the potential for a personalized copilot.</i>
@@ -62,15 +62,15 @@
     <!-- CasaOS Links -->
     <a href="https://www.casaos.io" target="_blank">Website</a> |
     <a href="http://demo.casaos.io" target="_blank">Demo</a> |
-    <a href="https://github.com/IceWhaleTech/CasaOS" target="_blank">GitHub</a>
+    <a href="https://github.com/OManoSigma09/NexusOS" target="_blank">GitHub</a>
     <br/>
     <br/>
     <!-- CasaOS Snapshots -->
     <kbd>
       <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="snapshot-dark.jpg">
-          <source media="(prefers-color-scheme: light)" srcset="snapshot-light.jpg">
-          <img alt="CasaOS Snapshot" src="snapshot-light.jpg">
+          <source media="(prefers-color-scheme: dark)" srcset="images/nexusosscreenshot.png">
+          <source media="(prefers-color-scheme: light)" srcset="images/nexusosscreenshot.png">
+          <img alt="NexusOS" src="images/nexusosscreenshot.png">
       </picture>
     </kbd>
 </p>
