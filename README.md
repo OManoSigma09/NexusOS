@@ -5,9 +5,9 @@
 <p align="center">
     <!-- Banner -->
     <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="images/nexusosbanner.png">
-        <source media="(prefers-color-scheme: light)" srcset="images/nexusosbanner.png">
-        <img alt="NexusOS" src="images/nexusosbanner.png">
+        <source media="(prefers-color-scheme: dark)" srcset="images/aetherosbanner.png">
+        <source media="(prefers-color-scheme: light)" srcset="images/aetherosbanner.png">
+        <img alt="AetherOS" src="images/aetherosbanner.png">
     </picture>
     <br/>
     <i>Connect with the community, establish autonomy, reduce the cost of SaaS, and MAXIMIZE the potential for a personalized copilot.</i>
