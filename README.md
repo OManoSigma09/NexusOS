@@ -102,7 +102,7 @@ curl -fsSL https://get.casaos.io | sudo bash
 
 ### Update Nexus
 
-NexusOs can be updated from the User Interface (UI), via `Settings ... Update`.  
+NexusOS can be updated from the User Interface (UI), via `Settings ... Update`.  
 
 Alternatively it can be updated from a terminal session.  To update from a terminal session, it must be done either from a secure shell (ssh) session to the device or from a directly attached terminal and keyboard to the device running NexusOS, this cannot be done from the terminal via the NexusOS User Interface (UI).  To update to the latest release of NexusOs from a terminal session run this command:
 
@@ -116,7 +116,7 @@ or
 curl -fsSL https://get.casaos.io/update | sudo bash
 ```
 
-To determine version of CasaOS from a terminal session run this command:
+To determine version of NexusOS from a terminal session run this command:
 
 ```sh
 casaos -v
@@ -124,7 +124,7 @@ casaos -v
 
 
 
-### Uninstall CasaOS
+### Uninstall NexusOS
 
 
 v0.3.3 or newer
