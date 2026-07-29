@@ -10,7 +10,7 @@
         <img alt="AetherOS" src="images/aetherosbanner.png">
     </picture>
     <br/>
-    <i>Connect with the community, establish autonomy, reduce the cost of SaaS, and MAXIMIZE the potential for a personalized copilot.</i>
+    <i>IN THIS MOMENT, AETHEROS STAY IN BETA AND BE DEVELOPING, PROBALY IS FINISHED SOON!</i>
     <br/>
     <!-- Links -->
     <a href="https://github.com/OManoSigma09/AetherOS" target="_blank">GitHub</a>&nbsp;&nbsp;&nbsp;
