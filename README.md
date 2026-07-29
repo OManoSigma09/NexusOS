@@ -60,8 +60,6 @@
     </a>
     <br/>
     <!-- CasaOS Links -->
-    <a href="https://www.casaos.io" target="_blank">Website</a> |
-    <a href="http://demo.casaos.io" target="_blank">Demo</a> |
     <a href="https://github.com/OManoSigma09/NexusOS" target="_blank">GitHub</a>
     <br/>
     <br/>
