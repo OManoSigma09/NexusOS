@@ -13,30 +13,11 @@
     <i>Connect with the community, establish autonomy, reduce the cost of SaaS, and MAXIMIZE the potential for a personalized copilot.</i>
     <br/>
     <br/>
-    <!-- CasaOS Badges -->
-    <a href="https://github.com/IceWhaleTech/CasaOS" target="_blank">
-        <img alt="CasaOS Version" src="https://img.shields.io/github/v/release/IceWhaleTech/CasaOS?color=162453&style=flat-square&label=CasaOS" />
-    </a>
-    <a href="https://github.com/IceWhaleTech/CasaOS/blob/main/LICENSE" target="_blank">
-        <img alt="CasaOS License" src="https://img.shields.io/github/license/IceWhaleTech/CasaOS?color=162453&style=flat-square&label=License" />
-    </a>
-    <a href="https://github.com/IceWhaleTech/CasaOS/pulls" target="_blank">
-        <img alt="CasaOS Pull Requests" src="https://img.shields.io/github/issues-pr/IceWhaleTech/CasaOS?color=162453&style=flat-square&label=PRs" />
-    </a>
-    <a href="https://github.com/IceWhaleTech/CasaOS/issues" target="_blank">
-        <img alt="CasaOS Issues" src="https://img.shields.io/github/issues/IceWhaleTech/CasaOS?color=162453&style=flat-square&label=Issues" />
-    </a>
-    <a href="https://codecov.io/gh/IceWhaleTech/CasaOS" > 
-    <img src="https://codecov.io/gh/IceWhaleTech/CasaOS/branch/main/graph/badge.svg?token=l9uMKGlkxM"/> 
-    </a>
-    <a href="https://github.com/IceWhaleTech/CasaOS/stargazers" target="_blank">
-        <img alt="CasaOS Stargazers" src="https://img.shields.io/github/stars/IceWhaleTech/CasaOS?color=162453&style=flat-square&label=Stars" />
-    </a>
-    <!-- <a href="https://github.com/IceWhaleTech/CasaOS/releases" target="_blank">
+    s://github.com/IceWhaleTech/CasaOS/releases" target="_blank">
     <img alt="CasaOS Downloads" src="https://img.shields.io/github/downloads/IceWhaleTech/CasaOS/total?color=162453&style=flat-square" />
     </a> -->
     <br/>
-    <!-- CasaOS Community -->
+    <!-- NexusOS Community -->
     <a href="https://discord.gg/knqAbbBbeX" target="_blank">
         <img alt="IceWhale Discord" src="https://img.shields.io/discord/884667213326463016?color=162453&style=flat-square&label=Discord&logo=discord&logoColor=fff" />
     </a>
