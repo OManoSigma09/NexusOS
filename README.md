@@ -20,9 +20,9 @@
     <!-- Snapshots -->
     <kbd>
       <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="images/aetherosscreenshot.png">
-          <source media="(prefers-color-scheme: light)" srcset="images/aetherosscreenshot.png">
-          <img alt="AetherOS" src="images/aetherosscreenshot.png">
+          <source media="(prefers-color-scheme: dark)" srcset="images/aetheros.png">
+          <source media="(prefers-color-scheme: light)" srcset="images/aetheros.png">
+          <img alt="AetherOS" src="images/aetheros.png">
       </picture>
     </kbd>
 </p>
