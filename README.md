@@ -91,13 +91,13 @@ Community Support
 Freshly install a system from the list above and run this command:
 
 ```sh
-wget -qO- https://get.casaos.io | sudo bash
+Coming Soon :)
 ```
 
 or
 
 ```sh
-curl -fsSL https://get.casaos.io | sudo bash
+Coming Soon :)
 ```
 
 ### Update AetherOS
@@ -107,19 +107,19 @@ AetherOS can be updated from the User Interface (UI), via `Settings ... Update`.
 Alternatively it can be updated from a terminal session.  To update from a terminal session, it must be done either from a secure shell (ssh) session to the device or from a directly attached terminal and keyboard to the device running AetherOS, this cannot be done from the terminal via the NexusOS User Interface (UI).  To update to the latest release of NexusOs from a terminal session run this command:
 
 ```sh
-wget -qO- https://get.casaos.io/update | sudo bash
+Coming Soon :)
 ```
 
 or
 
 ```sh
-curl -fsSL https://get.casaos.io/update | sudo bash
+Coming Soon :)
 ```
 
 To determine version of AetherOS from a terminal session run this command:
 
 ```sh
-casaos -v
+Coming Soon :)
 ```
 
 
@@ -130,13 +130,13 @@ casaos -v
 v0.3.3 or newer
 
 ```sh
-casaos-uninstall
+Coming Soon :)
 ```
 
 Before v0.3.3
 
 ```sh
-curl -fsSL https://get.icewhale.io/casaos-uninstall.sh | sudo bash
+Coming Soon :)
 ```
 
 
