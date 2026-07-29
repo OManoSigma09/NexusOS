@@ -3,7 +3,7 @@
 <!-- > English | [中文](#) | [Français](#) -->
 
 <p align="center">
-    <!-- CasaOS Banner -->
+    <!-- NexusOS Banner -->
     <picture>
         <source media="(prefers-color-scheme: dark)" srcset="images/nexusosbanner.png">
         <source media="(prefers-color-scheme: light)" srcset="images/nexusosbanner.png">
@@ -12,31 +12,12 @@
     <br/>
     <i>Connect with the community, establish autonomy, reduce the cost of SaaS, and MAXIMIZE the potential for a personalized copilot.</i>
     <br/>
-    <!-- NexusOS Community -->
-    <a href="https://github.com/OManoSigma09/NexusOS/wiki" target="_blank">
-        <img alt="NexusOS Wiki" src="https://img.shields.io/github/discussions/IceWhaleTech/CasaOS?color=162453&style=flat-square&label=Discussions&logo=github" />
-    </a>
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-    <a href="#credits">
-        <img alt="All Contributors" src="https://img.shields.io/static/v1?label=All%20Contributors&message=15&color=162453&style=flat-square&logo=Handshake&logoColor=fff" />
-    </a>
-    <!-- CasaOS YouTube -->
-    <a href="https://www.youtube.com/channel/UC2zMrUYT17AJhIl9XWZzT8g" target="_blank">
-        <img alt="YouTube Tutorial Views" src="https://img.shields.io/youtube/channel/views/UC2zMrUYT17AJhIl9XWZzT8g?style=flat-square&logo=youtube&logoColor=red&label=YouTube%20Tutorial%20Views" />
-    </a>
-    <br/>    
-    <a href="http://bit.ly/45JQIiL" target="_blank">
-        <img alt="twitter ZimaSpace" src="https://img.shields.io/twitter/follow/ZimaSpace?style=flat-square&logo=X&label=Contact%20Us%20%40%20ZimaSpace&labelColor=555&color=555" />
-    </a>
-    <a href="http://bit.ly/4lgHj7V" target="_blank">
-        <img alt="facebook ZimaSpace" src="https://img.shields.io/badge/ZimaSpace-1877F2?style=flat-square&logo=Facebook&logoColor=fff&label=Contact%20Us&labelColor=555&color=162453" />
-    </a>
-    <br/>
-    <!-- CasaOS Links -->
-    <a href="https://github.com/OManoSigma09/NexusOS" target="_blank">GitHub</a>
+    <!-- NexusOS Links -->
+    <a href="https://github.com/OManoSigma09/NexusOS" target="_blank">GitHub</a>&nbsp;&nbsp;&nbsp;
+    <a href="https://github.com/OManoSigma09/NexusOS/wiki" target="_blank">Nexus Wiki</a>
     <br/>
     <br/>
-    <!-- CasaOS Snapshots -->
+    <!-- NexusOS Snapshots -->
     <kbd>
       <picture>
           <source media="(prefers-color-scheme: dark)" srcset="images/nexusosscreenshot.png">
@@ -46,37 +27,44 @@
     </kbd>
 </p>
 
-## Why do you need Personal Cloud?
+## Why NexusOS?
 
-In 2020, the team noticed three important trends:
-- The cost of computing power and storage was decreasing fast.
-- A part of cloud computing was moving towards edge computing.
-- The issue of consumer data asset ownership and attribution had been ignored.
+Your data. Your services. Your control.
 
-Based on these trends, the team proposed a thought experiment internally: what if personal clouds were available under $100 in next five years? This personal cloud would provide a low-cost data collaboration solution as a personal data center, storing and managing data for creators and small organizations. A distributed collaborative computing network can be formed by personal servers located around the world. It could also control and connect all smart devices, providing cross-ecosystem local intelligent services.
+NexusOS is a modern self-hosting platform designed to simplify server management without sacrificing power. It brings together applications, storage, automation, media, AI, and development tools into one elegant and easy-to-use interface.
 
-Furthermore, the personal cloud could combine personal data to train personalized AI assistants. The idea is that this technology would be an effective way to solve the issue of consumer data asset ownership and , as well as provide a more affordable and efficient computing solution for individuals and small organizations.
+Whether you're building a personal cloud, a homelab, or a small business server, NexusOS gives you the freedom to own your infrastructure while staying fast, secure, and private.
+
+Simple enough for beginners. Powerful enough for enthusiasts.
 
 > If you think what we are doing is valuable. Please **give us a star ⭐** and **fork it 🤞**!
 
 ## Features
 
-- Friendly UI designed for home scenarios
-  - No code, no forms, intuitive, design for humanity
-- Multiple hardware and base system support
-  - ZimaBoard, NUC, RPi, old computers, whatever is available.
-- Selected apps in the app store, one-click installation
-  - Nextcloud, HomeAssistant, AdGuard, Jellyfin, *arr and more!
-- Easily install numerous Docker apps
-  - Over 100,000 apps from the Docker ecosystem can be easily installed
-- Elegant drive and file management
-  - What you see is what you get. No technical background required.
-- Well-designed system/app widgets
-  - What you care about, at a glance. Resource usage, app status, and more!
+- Modern and intuitive interface
+  - A clean, responsive, and user-friendly experience.
+- Built-in App Store
+  - Install your favorite self-hosted applications with a single click.
+- Wide app library
+  - Access popular apps like Nextcloud, Jellyfin, Home Assistant, AdGuard Home, Immich, Pi-hole, the *arr suite, and many more.
+- Powerful Docker integration
+  - Deploy and manage thousands of Docker containers effortlessly.
+- File management
+  - Upload, organize, and manage your files directly from the web interface.
+- Storage management
+  - Monitor disks, SSDs, HDDs, and storage usage with ease.
+- Real-time system monitoring
+  - Keep track of CPU, memory, storage, and network usage at a glance.
+- Fast and lightweight
+  - Optimized for both modern hardware and older machines.
+- Secure remote access
+  - Manage your server from anywhere while keeping your data private.
+- Open source
+  - Transparent, customizable, and community-driven.
 
 ## Getting Started
 
-CasaOS fully supports ZimaBoard, Intel NUC, and Raspberry Pi. Also, more computers and development boards and fully compatible with Ubuntu, Debian, Raspberry Pi OS, and CentOS with one-liner installation.
+NexusOS is fully compatible with Ubuntu, Debian, Raspberry Pi OS, and CentOS with one-liner installation.
 
 ### Hardware Compatibility
 
@@ -98,7 +86,7 @@ Community Support
 - OpenWrt (🚧 Not Fully Tested Yet)
 - ArchLinux (🚧 Not Fully Tested Yet)
 
-### Quick Setup CasaOS
+### Quick Setup NexusOS
 
 Freshly install a system from the list above and run this command:
 
@@ -112,11 +100,11 @@ or
 curl -fsSL https://get.casaos.io | sudo bash
 ```
 
-### Update CasaOS
+### Update Nexus
 
-CasaOS can be updated from the User Interface (UI), via `Settings ... Update`.  
+NexusOs can be updated from the User Interface (UI), via `Settings ... Update`.  
 
-Alternatively it can be updated from a terminal session.  To update from a terminal session, it must be done either from a secure shell (ssh) session to the device or from a directly attached terminal and keyboard to the device running CasaOS, this cannot be done from the terminal via the CasaOS User Interface (UI).  To update to the latest release of CasaOS from a terminal session run this command:
+Alternatively it can be updated from a terminal session.  To update from a terminal session, it must be done either from a secure shell (ssh) session to the device or from a directly attached terminal and keyboard to the device running NexusOS, this cannot be done from the terminal via the NexusOS User Interface (UI).  To update to the latest release of NexusOs from a terminal session run this command:
 
 ```sh
 wget -qO- https://get.casaos.io/update | sudo bash
