@@ -14,7 +14,7 @@
     <br/>
     <!-- Links -->
     <a href="https://github.com/OManoSigma09/AetherOS" target="_blank">GitHub</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/OManoSigma09/AetherOS/wiki" target="_blank">Nexus Wiki</a>
+    <a href="https://github.com/OManoSigma09/AetherOS/wiki" target="_blank">AetherOS Wiki</a>
     <br/>
     <br/>
     <!-- Snapshots -->
