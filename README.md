@@ -75,26 +75,11 @@ AetherOS is fully compatible with Ubuntu, Debian, Raspberry Pi OS, and CentOS wi
 ### System Compatibility
 
 Official Support
-- Debian 12 (✅ Tested, Recommended)
-- Ubuntu Server 20.04 (✅ Tested)
-- Raspberry Pi OS (✅ Tested)
-
-Community Support
-- Elementary 6.1 (✅ Tested)
-- Armbian 22.04 (✅ Tested)
-- Alpine (🚧 Not Fully Tested Yet)
-- OpenWrt (🚧 Not Fully Tested Yet)
-- ArchLinux (🚧 Not Fully Tested Yet)
+- Zorin OS Core 18 (Not Fully Tested Yet)
 
 ### Quick Setup AetherOS
 
 Freshly install a system from the list above and run this command:
-
-```sh
-Coming Soon :)
-```
-
-or
 
 ```sh
 Coming Soon :)
@@ -110,20 +95,6 @@ Alternatively it can be updated from a terminal session.  To update from a termi
 Coming Soon :)
 ```
 
-or
-
-```sh
-Coming Soon :)
-```
-
-To determine version of AetherOS from a terminal session run this command:
-
-```sh
-Coming Soon :)
-```
-
-
-
 ### Uninstall AetherOS
 
 
@@ -132,11 +103,3 @@ v0.3.3 or newer
 ```sh
 Coming Soon :)
 ```
-
-Before v0.3.3
-
-```sh
-Coming Soon :)
-```
-
-
