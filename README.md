@@ -31,7 +31,7 @@
     <br/>
     <br/>
     <kbd>
-      <img alt="AetherOS Screenshot" src="images/screenshot.png">
+      <img alt="AetherOS Screenshot" src="images/aetheros.png">
     </kbd>
 </p>
 
