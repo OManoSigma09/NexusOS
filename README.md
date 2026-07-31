@@ -1,105 +1,82 @@
-# AetherOS - Your Personal Cloud Hub. 
-<!-- Readme i18n links -->
-<!-- > English | [中文](#) | [Français](#) -->
+# AetherOS
 
-<p align="center">
-    <!-- Banner -->
-    <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="images/aetherosbanner.png">
-        <source media="(prefers-color-scheme: light)" srcset="images/aetherosbanner.png">
-        <img alt="AetherOS" src="images/aetherosbanner.png">
-    </picture>
-    <br/>
-    <i>IN THIS MOMENT, AETHEROS STAY IN BETA AND BE DEVELOPING, PROBALY IS FINISHED SOON!</i>
-    <br/>
-    <!-- Links -->
-    <a href="https://github.com/OManoSigma09/AetherOS" target="_blank">GitHub</a>&nbsp;&nbsp;&nbsp;
-    <a href="https://github.com/OManoSigma09/AetherOS/wiki" target="_blank">AetherOS Wiki</a>
-    <br/>
-    <br/>
-    <!-- Snapshots -->
-    <kbd>
-      <picture>
-          <source media="(prefers-color-scheme: dark)" srcset="images/aetheros.png">
-          <source media="(prefers-color-scheme: light)" srcset="images/aetheros.png">
-          <img alt="AetherOS" src="images/aetheros.png">
-      </picture>
-    </kbd>
-</p>
+Painel de controle self-hosted para homelab — containers Docker, arquivos, monitoramento e app store, com interface liquid glass.
 
-## Why AetherOS?
+## Instalação rápida (uma máquina Linux com Docker)
 
-Your data. Your services. Your control.
-
-AetherOS is a modern self-hosting platform designed to simplify server management without sacrificing power. It brings together applications, storage, automation, media, AI, and development tools into one elegant and easy-to-use interface.
-
-Whether you're building a personal cloud, a homelab, or a small business server, AetherOS gives you the freedom to own your infrastructure while staying fast, secure, and private.
-
-Simple enough for beginners. Powerful enough for enthusiasts.
-
-> If you think what we are doing is valuable. Please **give us a star ⭐** and **fork it 🤞**!
-
-## Features
-
-- Modern and intuitive interface
-  - A clean, responsive, and user-friendly experience.
-- Built-in App Store
-  - Install your favorite self-hosted applications with a single click.
-- Wide app library
-  - Access popular apps like Nextcloud, Jellyfin, Home Assistant, AdGuard Home, Immich, Pi-hole, the *arr suite, and many more.
-- Powerful Docker integration
-  - Deploy and manage thousands of Docker containers effortlessly.
-- File management
-  - Upload, organize, and manage your files directly from the web interface.
-- Storage management
-  - Monitor disks, SSDs, HDDs, and storage usage with ease.
-- Real-time system monitoring
-  - Keep track of CPU, memory, storage, and network usage at a glance.
-- Fast and lightweight
-  - Optimized for both modern hardware and older machines.
-- Secure remote access
-  - Manage your server from anywhere while keeping your data private.
-- Open source
-  - Transparent, customizable, and community-driven.
-
-## Getting Started
-
-AetherOS is fully compatible with Ubuntu, Debian, Raspberry Pi OS, and CentOS with one-liner installation.
-
-### Hardware Compatibility
-
-- amd64 / x86-64
-- arm64
-- armv7
-
-### System Compatibility
-
-Official Support
-- Zorin OS Core 18 (Not Fully Tested Yet)
-
-### Quick Setup AetherOS
-
-Freshly install a system from the list above and run this command:
-
-```sh
-Coming Soon :)
+```bash
+curl -fsSL https://raw.githubusercontent.com/SigmaDev21/AetherOS/main/install.sh | sudo bash
 ```
 
-### Update AetherOS
+Depois é só acessar `http://<ip-da-maquina>:3000`.
 
-AetherOS can be updated from the User Interface (UI), via `Settings ... Update`.  
+## Rodando manualmente
 
-Alternatively it can be updated from a terminal session.  To update from a terminal session, it must be done either from a secure shell (ssh) session to the device or from a directly attached terminal and keyboard to the device running AetherOS, this cannot be done from the terminal via the NexusOS User Interface (UI).  To update to the latest release of NexusOs from a terminal session run this command:
-
-```sh
-Coming Soon :)
+```bash
+git clone https://github.com/SigmaDev21/AetherOS.git
+cd aetheros
+docker compose up -d --build
 ```
 
-### Uninstall AetherOS
+## Desenvolvimento local (sem Docker)
 
-
-v0.3.3 or newer
-
-```sh
-Coming Soon :)
+```bash
+cd backend
+npm install
+npm run dev
 ```
+
+> Fora de um container, o acesso ao `/var/run/docker.sock` e às métricas do host
+> depende do seu sistema operacional — em Linux funciona direto; em macOS/Windows
+> use o Docker Desktop, que expõe o socket automaticamente.
+
+## Estrutura
+
+```
+aetheros/
+├── backend/          # API Node.js + Express
+│   ├── routes/        # auth, containers, system, apps
+│   ├── lib/           # docker.js, system.js, config.js, authMiddleware.js
+│   ├── data/           # config.json e catálogo de apps (persistido via volume)
+│   └── server.js
+├── frontend/          # interface (HTML/CSS/JS puro)
+├── docker-compose.yml
+└── install.sh
+```
+
+## Primeira execução
+
+1. Acesse o IP da máquina na porta 3000.
+2. O assistente de configuração inicial vai pedir nome do host, conta de administrador e tema.
+3. Depois disso, use essa conta pra fazer login normalmente.
+
+## Desinstalando
+
+```bash
+cd /opt/aetheros
+sudo bash uninstall.sh            # interativo, mantém a pasta data/
+sudo bash uninstall.sh --yes      # sem perguntas, mantém a pasta data/
+sudo bash uninstall.sh --purge    # sem perguntas, apaga TUDO (containers, imagem e data/)
+```
+
+Docker, neofetch e btop **não** são removidos automaticamente (são ferramentas de uso geral do sistema, não exclusivas do AetherOS).
+
+## Aether Store
+
+A App Store do AetherOS ("Aether Store") combina dois catálogos:
+
+- `backend/data/apps-catalog.json` — catálogo próprio, editado à mão
+- Catálogo público do [CasaOS AppStore](https://github.com/IceWhaleTech/CasaOS-AppStore) (Apache-2.0, créditos à IceWhaleTech) — sincronizado automaticamente pelo backend a cada 24h
+
+A sincronização baixa o repositório do CasaOS como `.zip` uma vez (evita o rate limit da API do GitHub), extrai cada `Apps/<nome>/docker-compose.yml` e lê os metadados do bloco `x-casaos:` (ícone, categoria, descrição). O resultado fica em cache em `data/casaos-catalog-cache.json`.
+
+Endpoint manual pra forçar a sincronização: `POST /api/apps/refresh-casaos-store`.
+
+> Instalação de apps com um clique (aplicar o `docker-compose.yml` de cada app via Docker) ainda não está implementada — só o catálogo/listagem por enquanto.
+
+## Roadmap
+
+- [ ] Conectar o frontend às rotas reais da API (hoje ele ainda usa dados de exemplo)
+- [ ] Gerenciador de arquivos com upload/download real
+- [x] Sincronizar o catálogo da Aether Store com o CasaOS AppStore
+- [ ] Instalação de apps com um clique (aplicar o docker-compose de cada template)

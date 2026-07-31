@@ -1,0 +1,25 @@
+{
+  "name": "aetheros-backend",
+  "version": "0.1.0",
+  "description": "Backend do AetherOS — API de containers, sistema e autenticação",
+  "main": "server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js"
+  },
+  "dependencies": {
+    "adm-zip": "^0.5.14",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dockerode": "^4.0.2",
+    "express": "^4.19.2",
+    "js-yaml": "^4.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "systeminformation": "^5.22.11"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
