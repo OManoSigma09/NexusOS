@@ -1,0 +1,27 @@
+services:
+  aetheros:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    image: aetheros:latest
+    container_name: aetheros
+    restart: unless-stopped
+    ports:
+      # porta 80 do host (HTTP padrão) → porta 3000 do container.
+      # Assim dá pra acessar só com http://<ip-da-máquina>, sem precisar
+      # digitar a porta.
+      - "80:3000"
+    volumes:
+      # acesso ao Docker do HOST — é isso que permite listar/controlar containers
+      - /var/run/docker.sock:/var/run/docker.sock
+      # dados persistentes (config, credenciais, catálogo de apps instalados)
+      - ./data:/app/backend/data
+      # métricas reais do host em vez das do próprio container
+      - /proc:/host/proc:ro
+      - /sys:/host/sys:ro
+    environment:
+      - PORT=3000
+      - NODE_ENV=production
+      - AETHEROS_JWT_SECRET=troque-por-uma-string-aleatoria-longa
+      - HOST_PROC=/host/proc
+      - HOST_SYS=/host/sys
