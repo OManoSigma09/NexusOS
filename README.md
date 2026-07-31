@@ -130,13 +130,6 @@ AetherOS/
 2. The setup wizard will ask for a host name, admin account, and theme.
 3. After that, use that account to log in normally.
 
-## Roadmap
-
-- [ ] Wire the frontend to the real API routes (it still uses sample data today)
-- [ ] File manager with real upload/download
-- [x] Sync the Aether Store catalog with public app catalogs
-- [ ] One-click install for catalog apps (apply each template's docker-compose)
-
 ## Credits
 
 The Aether Store catalog is synced from a public, third-party app catalog licensed under Apache-2.0. Credit to the original maintainers — see `backend/lib/casaosStore.js` for the technical details of the integration.
