@@ -129,8 +129,3 @@ AetherOS/
 1. Access the machine's IP.
 2. The setup wizard will ask for a host name, admin account, and theme.
 3. After that, use that account to log in normally.
-
-
-## License
-
-MIT — see [LICENSE](LICENSE).
