@@ -1,8 +1,0 @@
-[
-  { "id": "vaultwarden", "name": "Vaultwarden", "desc": "gerenciador de senhas", "version": "1.32.0", "icon": "Vw", "color": "#8B5CF6" },
-  { "id": "homarr", "name": "Homarr", "desc": "dashboard de links", "version": "0.15.2", "icon": "Hm", "color": "#F472B6" },
-  { "id": "immich", "name": "Immich", "desc": "backup de fotos", "version": "1.108.0", "icon": "Im", "color": "#8B5CF6" },
-  { "id": "uptime-kuma", "name": "Uptime Kuma", "desc": "monitor de disponibilidade", "version": "1.23.13", "icon": "Uk", "color": "#F472B6" },
-  { "id": "nextcloud", "name": "Nextcloud", "desc": "nuvem privada", "version": "29.0", "icon": "Nc", "color": "#8B5CF6" },
-  { "id": "grafana", "name": "Grafana", "desc": "painéis e métricas", "version": "11.1", "icon": "Gf", "color": "#F472B6" }
-]
